@@ -1,5 +1,8 @@
 # Transmission Docker file for Raspberry Pi 3
 
+docker built:
+docker build -t transmission-rpi3 .
+
 docker run -i --restart=always --net=bridge -d \
 --name=transmission \
 --hostname=transmission \
@@ -13,4 +16,4 @@ docker run -i --restart=always --net=bridge -d \
 transmission-rpi3:latest
 
 
-请将配置文件复制到/root/.config/transmission-daemon \
+please copy 'setting.json' to '/CONFIG__Fix' or '/root/.config/transmission-daemon'
